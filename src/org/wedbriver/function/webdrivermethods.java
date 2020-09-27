@@ -35,7 +35,9 @@ public class webdrivermethods{
 	}
 
 	public void ClickElement(WebElement webele) {
-		try{webele.click();}
+		try{
+			elewait(webele);
+			webele.click();}
 		catch(Exception c)
 		{System.out.println(c);}
 	}
@@ -57,7 +59,12 @@ public class webdrivermethods{
 			System.out.println(c);
 		}
 	}
+	
+	public void elewait(WebElement webele)
 
+	{
+		//explicit
+	}
 	public String readdata(String text) throws FileNotFoundException, IOException
 	{
 		try{

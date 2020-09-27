@@ -20,6 +20,8 @@ public class xpath_amazonsearch extends webdrivermethods{
 	@FindBy(xpath="//input[@value='Go']")
 	private WebElement Go;
 	
+	//list webelement and verify it
+	
 	//**********************************************************************//
 
 	public WebElement getSearchtextbox() 

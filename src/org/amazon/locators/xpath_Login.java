@@ -20,8 +20,8 @@ public class xpath_Login extends webdrivermethods {
 
 	public WebElement getSignin() 
 	{return signin;}
-	
-//**********************************************************************//
+
+	//**********************************************************************//
 
 	@FindBy(name = "email")
 	private WebElement email;
@@ -40,37 +40,39 @@ public class xpath_Login extends webdrivermethods {
 
 	public WebElement getcntinue() 
 	{return cntinue;}
-	
-//**********************************************************************//
+
+	//**********************************************************************//
 
 	@FindBy(id = "signInSubmit")
 	private WebElement signInSubmit;
 
 	public WebElement getSignInSubmit() 
 	{return signInSubmit;	}
-//**********************************************************************//
-	public void signinaction() {
-		ClickElement(getSignin());
-	}
+	//**********************************************************************//
 
-	public void userlogin() throws FileNotFoundException, IOException, InterruptedException {
+
+	public void userlogin(String uname, String pwd) throws FileNotFoundException, IOException, InterruptedException {
 
 		try{
-			PassElement(getemail(), readdata("uname")); 
+			ClickElement(getSignin());
+			Thread.sleep(2000);
+			PassElement(getemail(), uname); 
 			Thread.sleep(1000);
 			ClickElement(getcntinue());
 			Thread.sleep(1000);
-			PassElement(getpassword(),readdata("pwd"));
-			Thread.sleep(1000);}
+			PassElement(getpassword(),pwd);
+			Thread.sleep(1000);
+			ClickElement(getSignInSubmit());}
 		catch(Exception e)
 		{System.out.println(e);}
 
 	}
 
-	public void signin() {
+	public void verifyHomePage() {
 		try
-		{ClickElement(getSignInSubmit());
-		Thread.sleep(1000);}
+		{
+
+			Thread.sleep(1000);}
 		catch(Exception e)
 		{System.out.println(e);}
 	}

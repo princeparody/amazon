@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41133" started-at="2020-09-26T14:00:32Z" finished-at="2020-09-26T14:01:13Z">
+  <suite name="Default suite" duration-ms="92621" started-at="2020-09-27T13:20:20Z" finished-at="2020-09-27T13:21:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41133" started-at="2020-09-26T14:00:32Z" finished-at="2020-09-26T14:01:13Z">
+    <test name="Default test" duration-ms="92621" started-at="2020-09-27T13:20:20Z" finished-at="2020-09-27T13:21:52Z">
       <class name="org.amazon.test.Amazon_Test_001">
-        <test-method status="PASS" signature="browser()[pri:0, instance:org.amazon.test.Amazon_Test_001@34c75a]" name="browser" is-config="true" duration-ms="19194" started-at="2020-09-26T14:00:32Z" finished-at="2020-09-26T14:00:51Z">
+        <test-method status="PASS" signature="browser()[pri:0, instance:org.amazon.test.Amazon_Test_001@1b699ef]" name="browser" is-config="true" duration-ms="22986" started-at="2020-09-27T13:20:20Z" finished-at="2020-09-27T13:20:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="Userfunction()[pri:0, instance:org.amazon.test.Amazon_Test_001@34c75a]" name="Userfunction" duration-ms="21900" started-at="2020-09-26T14:00:51Z" finished-at="2020-09-26T14:01:13Z">
+        <test-method status="PASS" signature="Userfunction()[pri:0, instance:org.amazon.test.Amazon_Test_001@1b699ef]" name="Userfunction" duration-ms="69556" started-at="2020-09-27T13:20:43Z" finished-at="2020-09-27T13:21:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Userfunction -->
